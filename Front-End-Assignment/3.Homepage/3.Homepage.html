@@ -1,0 +1,180 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>3.Homepage - D.com MENU</title>
+		<link rel="stylesheet" href="./3.Homepage_style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<a href="./3.Homepage.html"><li><img class="logo" src="./source/logo.png" onmouseover="this.src='./source/logo_hover.png'" onmouseout="this.src='./source/logo.png'"></img></li></a>
+					<a href="#"><li>홈</li></a>
+					<a href="#about"><li>소개</li></a>
+					<a href="#hours"><li>영업시간</li></a>
+					<a href="#map"><li>오시는 길</li></a>
+				</ul>
+			</nav>
+		</header>
+		
+		<article>
+			<div id="order">
+				<h1>주소</h1>
+				<input type="text" name="location" id="location" value=""><br>
+	
+				<h1>메뉴</h1>
+				<ul class="list_item">
+					<div class="item">
+						<li>
+							<table>
+								<tr>
+									<td><img src="./source/item_1.jpg" alt='후라이드치킨'></img></td>
+								</tr>
+								<tr>
+									<td>후라이드 치킨</td>
+								</tr>
+								<tr>
+									<td>18,000원</td>
+								</tr>
+							</table>
+						</li>
+					</div>
+					<div class="item">
+						<li>
+							<table>
+								<tr>
+									<td><img src="./source/item_2.jpg" alt='양념치킨'></img></td>
+								</tr>
+								<tr>
+									<td>양념 치킨</td>
+								</tr>
+								<tr>
+									<td>19,000원</td>
+								</tr>
+							</table>
+						</li>
+					</div>
+					<div class="item">
+						<li>
+							<table>
+								<tr>
+									<td><img src="./source/item_3.jpg" alt='간장치킨'></img></td>
+								</tr>
+								<tr>
+									<td>간장 치킨</td>
+								</tr>
+								<tr>
+									<td>19,000원</td>
+								</tr>
+							</table>
+						</li>
+					</div>
+					<div class="item">
+						<li>
+							<table>
+								<tr>
+									<td><img src="./source/item_4.jpg" alt='반반치킨'></img></td>
+								</tr>
+								<tr>
+									<td>반반 치킨</td>
+								</tr>
+								<tr>
+									<td>19,000원</td>
+								</tr>
+							</table>
+						</li>
+					</div>
+				</ul>
+				
+				<h1>결제수단</h1>
+				<select class=payment>
+					<option value="cash">현금 (음료수 서비스)</option>
+					<option value="credit_card">신용카드 / 체크카드</option>
+					<option value="kakao_pay">카카오페이</option>
+				</select><br>
+				
+				<div class=order_button>주문하기</div>
+			</div>
+			
+			<div id="about">
+				<img src="./source/logo_large.png"></img>
+				<br>
+				<br>
+				<br>
+				<p>
+					DFC의 정신인 D.com Fried Chicken은 2019년 전자정보대학에 <br>
+					첫 매장을 열었을때, 컴퓨터공학과의 본고장이 손님을 대접한다는 마음을 <br>
+					표현하기 위해 처음 붙여진 이름이었습니다.<br>
+					<br>
+					이후, DFC의 로고는 변경되었지만, 엄선한 닭고기 통살을 위주로 <br>
+					매장에서 직접 요리해서 대접하는 DFC의 식사에는 <br>
+					손님을 대접하고자 하는 정신이 여전히 살아있습니다.<br>
+					<br>
+					그의 푸근하고 친근한 미소는 <u><strong>DFC의 맛있는 음식으로 손님을 대접하고자 하는 <br>
+					마음을 표현하고 있으며, 그의 흰 옷은 청결을 상징합니다.</strong></u><br>
+					주원은 생전에 매장순회 교육 시에도 항상 더러워지기 쉬운 흰 옷을 입고 <br>
+					교육에 임하면서 청결을 강조했다고 합니다.<br>
+					<br>
+					즉, DFC 로고는 서 주원을 통해 고객을 환영하는 따뜻한 마음을 전달하고, <br>
+					고객에게 청결한 고품질의 식사, 가족들이 맛있는 식사를 즐기고 휴식할 수 있는 <br>
+					공간을 제공하겠다는 의지를 의미합니다.<br>
+				</p>
+			</div>
+			
+			<div id="hours">
+				<h1>영업 시간</h1><br>
+				10:00 ~ 24:00<br>
+				전 지역 배달 가능<br>
+			</div>
+			
+			<div id="map">
+				<h1>오시는 길</h1><br>
+				경기도 용인시 기흥구 덕영대로 1732<br>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.3268468474434!2d127.08189878564012!3d37.23995198915351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE0JzIzLjgiTiAxMjfCsDA1JzAwLjYiRQ!5e0!3m2!1sko!2skr!4v1563286330451!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+
+			
+			<script>
+				function getLocation() {
+					if (navigator.geolocation) { // GPS를 지원하면
+						navigator.geolocation.getCurrentPosition(function(position) {
+							//alert(position.coords.latitude + ' ' + position.coords.longitude);
+							var requestURL = 'https://nominatim.openstreetmap.org/reverse?format=json&lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&zoom=18&addressdetails=1';
+							var request = new XMLHttpRequest();
+							request.open('GET', requestURL);
+							request.responseType = 'json';
+							request.send();
+							request.onload = function() {
+								var arr_address = request.response.display_name.split(", ");
+								var str_address = '';
+								for (var i=arr_address.length-1; i >= 0; i--) {
+									if ((arr_address[i] !== '한국') && (isNaN(arr_address[i])) && !(arr_address[i][arr_address[i].length-1] == '동' && arr_address[i-1][arr_address[i-1].length-1] == '동' && arr_address[i][0] == arr_address[i-1][0])) {
+										str_address += arr_address[i] + ' ';
+									}
+								}
+								//document.write('Your address is ' + str_address);
+								document.getElementById("location").value= str_address; 
+							}
+						}, function(error) {
+							console.error(error);
+						}, {
+							enableHighAccuracy: false,
+							maximumAge: 0,
+							timeout: Infinity
+						});
+					} else {
+						alert('GPS를 지원하지 않습니다');
+					}
+				}
+				getLocation();
+			</script>			
+		</article>
+		
+		<footer>
+			<address><a href="mailto:tdj03204@naver.com"><strong>MileStone</strong></a> @ 2019 Summer Web Study with D.com</address>
+		</footer>
+	</body>
+</html>

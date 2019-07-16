@@ -1,0 +1,148 @@
+body{
+	background-image: url("./source/bg.png");
+	background-color: #fff9da;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 500px;
+	margin: 0;
+	text-align: center;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #ddd;
+}
+h1{
+	margin: 0;
+}
+
+.logo{
+	width: 100px;
+}
+nav{
+}
+nav ul{
+	background-color: #c00;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 3px solid #a00;
+}
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+}
+nav ul li:hover{
+	background-color: #fff;
+	color: #c00;
+}
+
+#order{
+	background-color: #fff;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	border: 2px solid;
+}
+#order h1{
+	font-size: 15pt;
+	margin-bottom: 10px;
+}
+#order input{
+	width: 90%;
+	height: 30px;
+	padding-left: 5px;
+	margin-bottom: 30px;
+}
+.list_item{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.item{
+	background-color: #ddd;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	display: inline-block;
+	width: 22.5%;
+	cursor: pointer;
+}
+.item img{
+	width: 100%;
+}
+.item:hover{
+	background-color: #aaa;
+}
+.item:focus{
+	border: solid;
+}
+@media all and (max-width: 50em) {
+	#order{
+		width: 80%;
+	}
+	.item{
+		display: inline-block;
+		width: 45%;
+	}
+}
+.payment{
+	margin-bottom: 30px;
+	height: 30px;
+}
+.order_button{
+	background-color: #c00;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.order_button:hover{
+	background-color: #f00;
+}
+
+#about {
+	background-color: #fff;
+	padding: 80px 20px;
+	border-top: 15px solid #c00;
+	border-bottom: 5px solid #c00;
+}
+
+#hours {
+	background-color: #c00;
+	color: #fff;
+	padding: 80px 20px;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+}
+
+#map {
+	background-color: #fff;
+	padding: 80px 20px;
+	border-top: 5px solid #c00;
+	border-bottom: 5px solid #c00;
+}
+
+footer{
+	background: #c00;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.5;
+	color: #fff;
+	border-top: 5px solid #fff;
+}
